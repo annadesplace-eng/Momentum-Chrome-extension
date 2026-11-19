@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2b53"/>
+      <stop offset="0.45" stop-color="#7a4b8c"/>
+      <stop offset="0.75" stop-color="#e98a7a"/>
+      <stop offset="1" stop-color="#f7c59f"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4d6"/>
+      <stop offset="0.6" stop-color="#ffd59a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffb38a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9a08a"/>
+      <stop offset="1" stop-color="#2a2d5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <g fill="#fff" opacity="0.7">
+    <circle cx="180" cy="90" r="1.6"/><circle cx="420" cy="150" r="1.2"/><circle cx="690" cy="60" r="1.4"/>
+    <circle cx="960" cy="120" r="1.1"/><circle cx="1220" cy="80" r="1.7"/><circle cx="1450" cy="170" r="1.2"/>
+    <circle cx="300" cy="230" r="1"/><circle cx="1100" cy="220" r="1"/><circle cx="820" cy="190" r="0.9"/>
+  </g>
+  <circle cx="1080" cy="610" r="210" fill="url(#sun)"/>
+  <circle cx="1080" cy="610" r="70" fill="#fff1cf"/>
+  <path d="M0 600 L180 470 L330 560 L520 400 L700 540 L860 450 L1040 580 L1250 430 L1420 540 L1600 470 L1600 1000 L0 1000Z" fill="#8a5a8f" opacity="0.55"/>
+  <path d="M0 660 L220 540 L400 630 L600 520 L820 640 L1000 560 L1200 650 L1400 560 L1600 640 L1600 1000 L0 1000Z" fill="#5c3f78" opacity="0.8"/>
+  <rect y="680" width="1600" height="320" fill="url(#water)"/>
+  <g fill="#fff3d9" opacity="0.55">
+    <rect x="1010" y="700" width="140" height="3" rx="1.5"/><rect x="1030" y="725" width="100" height="3" rx="1.5"/>
+    <rect x="1045" y="752" width="70" height="2.5" rx="1.2"/><rect x="1055" y="780" width="50" height="2" rx="1"/>
+  </g>
+  <path d="M0 760 C 300 720, 500 800, 760 770 S 1300 740, 1600 790 L1600 1000 L0 1000Z" fill="#1f1d42" opacity="0.85"/>
+</svg>

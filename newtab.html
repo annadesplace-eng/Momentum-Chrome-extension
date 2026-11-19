@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hello Anna</title>
+<link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div id="clock"></div>
+      <h1>Hello Anna</h1>
+      <p id="date"></p>
+      <div class="meta">
+        <button id="weather" class="pill" title="Change city">…</button>
+        <div id="zones" class="zones"></div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <div class="col">
+        <!-- Calendar -->
+        <section class="card">
+          <header>
+            <h2>Today</h2>
+            <div class="actions">
+              <a href="ical://" class="pill" title="Open Apple Calendar">Open Calendar</a>
+              <button id="gear" class="icon" title="Calendar settings" aria-label="Calendar settings">⚙</button>
+            </div>
+          </header>
+          <ul id="events"></ul>
+          <form id="settings" hidden>
+            <label for="url">Calendar link (webcal:// or https:// .ics)</label>
+            <input id="url" type="url" placeholder="webcal://p00-caldav.icloud.com/published/2/..." autocomplete="off">
+            <div class="row">
+              <button type="submit">Save</button>
+              <button type="button" id="cancel" class="ghost">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Priorities -->
+        <section class="card">
+          <header><h2>Top 3 today</h2><span class="hint">Resets each morning</span></header>
+          <ol id="prios"></ol>
+        </section>
+      </div>
+
+      <!-- News -->
+      <section class="card news">
+        <header>
+          <h2>Daily brief</h2>
+          <button id="refresh" class="icon" title="Refresh news" aria-label="Refresh news">↻</button>
+        </header>
+        <div id="topics" class="topics"></div>
+        <nav id="tabs" class="tabs"></nav>
+        <ul id="headlines"></ul>
+      </section>
+    </div>
+  </div>
+
+  <form id="cityForm" class="popover" hidden>
+    <label for="city">Weather city</label>
+    <input id="city" placeholder="Paris" autocomplete="off">
+    <div class="row"><button type="submit">Save</button><button type="button" id="cityCancel" class="ghost">Cancel</button></div>
+  </form>
+
+  <footer class="photo-bar">
+    <div id="credit" class="credit"></div>
+    <div id="bgMode" class="seg" title="Background">
+      <button data-m="london">London</button><button data-m="daily">Photo of the day</button>
+    </div>
+  </footer>
+
+  <script src="calendar.js"></script>
+  <script src="bg.js"></script>
+  <script src="extras.js"></script>
+  <script src="news.js"></script>
+</body>
+</html>
